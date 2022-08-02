@@ -30,7 +30,7 @@
             
         </table>
     </div>
-
+ 
     <div class="bot" style="line-height: 20px; margin-top: 50px">
         <table style="font-size: 20px; font-weight: 900">
             <tr>
