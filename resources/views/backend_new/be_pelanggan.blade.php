@@ -160,7 +160,7 @@
 <div class="modal fade" id="modalcetak2" tabindex="-1" role="dialog" aria-labelledby="modal_5" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form id="formcetak" action="/admin-pelanggan-print-amplop" enctype="multipart/form-data" method="GET">
+            <form id="formcetak" action="/admin-pelanggan-print-amplop" enctype="multipart/form-data" method="GET" target="_blank">
                 <div class="modal-header" style="background-color: deepskyblue">
                     <h5 class="modal-title" id="modal_title_6" style="color: white">CETAK ALAMAT AMPLOP</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <input type="submit" target="_blank" class="btn btn-outline-primary btn-sm" id="btnimport" value="CETAK!">
+                    <input type="submit" class="btn btn-outline-primary btn-sm" id="btnimport" value="CETAK!">
                 </div>
             </form>
         </div>
