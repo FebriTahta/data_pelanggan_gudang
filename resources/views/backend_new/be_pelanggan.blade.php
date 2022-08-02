@@ -176,7 +176,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <input type="submit" class="btn btn-outline-primary btn-sm" id="btnimport" value="CETAK!">
+                    <input type="submit" target="_blank" class="btn btn-outline-primary btn-sm" id="btnimport" value="CETAK!">
                 </div>
             </form>
         </div>
