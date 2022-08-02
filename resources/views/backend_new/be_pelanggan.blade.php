@@ -131,7 +131,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="modalcetak" tabindex="-1" role="dialog" aria-labelledby="modal_5" aria-hidden="true">
+<div class="modal fade" id="modalcetak" tabindex="-1" role="dialog" aria-labelledby="modal_5" aria-hidden="true" target="_blank">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <form id="formcetak" action="/admin-pelanggan-print" enctype="multipart/form-data" method="GET">
