@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="amplop" style="margin-left: 25%">
-        <div class="bot" style="font-size: 12px">
+        <div class="bot" style="font-size: 14px">
             <table >
                 <tr>
                     <td style="width: 50%"><b>PENGIRIM</b></td>
@@ -31,7 +31,7 @@
             </table>
         </div>
     
-        <div class="kop" style="margin-top: 80px; margin-left:40%; font-size: 12px">
+        <div class="kop" style="margin-top: 80px; margin-left:40%; font-size: 14px">
             <table >
                 <tr>
                     <td><b>KEPADA Yth</b></td>
