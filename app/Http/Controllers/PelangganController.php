@@ -122,7 +122,9 @@ class PelangganController extends Controller
     public function be_print_pelanggan(Request $request)
     {
         $data = Pelanggan::findOrFail($request->id);
-        $pdf  = PDF::loadview('cetak.cetak',compact('data'))->setPaper('A4','potrait');
+        $pdf  = PDF::loadview('cetak.cetak_pelanggan',compact('data'))->setPaper('A4','potrait');
         return $pdf->stream();
     }
+
+
 }

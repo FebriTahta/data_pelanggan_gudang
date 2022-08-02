@@ -24,6 +24,7 @@ Route::get('/admin-dashboard',[PelangganController::class,'be_dashboard'])->name
 Route::get('/admin-data-pelanggan',[PelangganController::class,'be_pelanggan'])->name('be.pelanggan');
 Route::get('/admin-data-pelanggan-data',[PelangganController::class,'be_pelanggan_data'])->name('be.pelanggan.data');
 Route::get('/admin-pelanggan-print',[PelangganController::class,'be_print_pelanggan'])->name('be.print.pelanggan');
+Route::get('/admin-pelanggan-print-amplop',[PelangganController::class,'be_print_amplop'])->name('be.print.amplop');
 
 
 Route::post('/admin-import-pelanggan',[ImportController::class,'import_pelanggan'])->name('import.pelanggan');
