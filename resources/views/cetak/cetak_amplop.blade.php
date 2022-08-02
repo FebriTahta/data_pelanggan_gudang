@@ -31,7 +31,7 @@
             </table>
         </div>
     
-        <div class="kop" style="margin-top: 30px; margin-left:40%; font-size: 12px">
+        <div class="kop" style="margin-top: 80px; margin-left:40%; font-size: 12px">
             <table >
                 <tr>
                     <td><b>KEPADA Yth</b></td>
