@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <div class="kop" style="line-height: 20px;">
+    <div class="kop" style="line-height: 30px;">
         <table style="font-size: 20px; font-weight: 900">
             <tr>
                 <td><b>KEPADA YTH</b></td>
@@ -31,7 +31,7 @@
         </table>
     </div>
   
-    <div class="bot" style="line-height: 20px; margin-top: 50px">
+    <div class="bot" style="line-height: 30px; margin-top: 50px">
         <table style="font-size: 20px; font-weight: 900">
             <tr>
                 <td><b>PENGIRIM</b></td>
