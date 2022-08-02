@@ -45,7 +45,7 @@
             <tr>
                 <td style="width: 80%"><b style="text-transform: uppercase">Telp. 031-8281278 / 8298887 Hp. 081333087809</b></td>
                 <td style="width: 40%"></td>
-            </tr>
+            </tr> 
             
         </table>
     </div>
