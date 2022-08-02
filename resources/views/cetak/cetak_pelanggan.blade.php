@@ -12,10 +12,10 @@
     </style>
 </head>
 <body>
-    <div class="kop" style="line-height: 30px;">
+    <div class="kop" style="line-height: 25px;">
         <table style="font-size: 20px; font-weight: 900">
             <tr>
-                <td><b>KEPADA YTH</b></td>
+                <td><b>KEPADA Yth</b></td>
             </tr>
             <tr>
                 <td><b>Ust / Ustd. {{$data->kepala}}</b></td>
@@ -27,11 +27,10 @@
                 <td style="width: 80%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
                 <td style="width: 40%"></td>
             </tr>
-            
         </table>
     </div>
   
-    <div class="bot" style="line-height: 30px; margin-top: 50px">
+    <div class="bot" style="line-height: 25px; margin-top: 50px">
         <table style="font-size: 20px; font-weight: 900">
             <tr>
                 <td><b>PENGIRIM</b></td>

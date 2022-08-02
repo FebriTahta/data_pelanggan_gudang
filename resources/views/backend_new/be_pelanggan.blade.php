@@ -135,8 +135,34 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <form id="formcetak" action="/admin-pelanggan-print" enctype="multipart/form-data" method="GET">
-                <div class="modal-header" style="background-color: deepskyblue">
+                <div class="modal-header" style="background-color: green">
                     <h5 class="modal-title" id="modal_title_6" style="color: white">CETAK</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="py-3">
+                        <div class="form-group">
+                            <p style="margin-left: 10px">CETAK DATA PELANGGAN BERIKUT ?</p>
+                            <input type="hidden" name="id" id="id">
+                            <h5 id="namacabang" style="text-transform: uppercase;margin-left: 10px"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-outline-primary btn-sm" id="btnimport" value="CETAK!">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalcetak2" tabindex="-1" role="dialog" aria-labelledby="modal_5" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form id="formcetak" action="/admin-pelanggan-print-amplop" enctype="multipart/form-data" method="GET">
+                <div class="modal-header" style="background-color: deepskyblue">
+                    <h5 class="modal-title" id="modal_title_6" style="color: white">CETAK ALAMAT AMPLOP</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
                 </div>
@@ -438,6 +464,16 @@
         })
 
         $('#modalcetak').on('show.bs.modal', function(event) {
+                var button  = $(event.relatedTarget)
+                var id      = button.data('id')
+                var namacabang  = button.data('namacabang')
+               
+                var modal   = $(this)
+                modal.find('.modal-body #id').val(id);
+                modal.find('.modal-body #namacabang').html(namacabang);
+        })
+
+        $('#modalcetak2').on('show.bs.modal', function(event) {
                 var button  = $(event.relatedTarget)
                 var id      = button.data('id')
                 var namacabang  = button.data('namacabang')

@@ -12,41 +12,38 @@
     </style>
 </head>
 <body>
-    <div class="kop" style="line-height: 20px;">
-        <table>
+    <div class="bot" style="margin-top: 50px;">
+        <table >
             <tr>
-                <td><b>KEPADA YTH</b></td>
+                <td style="width: 50%"><b>PENGIRIM</b></td>
             </tr>
             <tr>
-                <td><b>Ust / Ustd. {{$data->kepala}}</b></td>
+                <td style="width: 50%"><b>Pesantren AL-Quran Nurul Falah</b></td>
+            </tr>
+            <tr>
+                <td style="width: 50%"><b>Jl. Ketintang Timur PTT VB Surabaya</b></td>
+            </tr>
+            <tr>
+                <td style="width: 50%"><b style="text-transform: uppercase">Telp. 031-8281278 / 8298887 Hp. 081333087809</b></td>
+            </tr> 
+            
+        </table>
+    </div>
+
+    <div class="kop" style="margin-left:50%">
+        <table >
+            <tr>
+                <td><b>KEPADA Yth</b></td>
+            </tr>
+            <tr>
+                <td><b>Ust/Ustd. {{$data->kepala}}</b></td>
             </tr>
             <tr>
                 <td><b>Telp. {{$data->telepon}}</b></td>
             </tr>
             <tr>
-                <td style="width: 60%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
-                <td style="width: 40%"></td>
+                <td style=""><b style="">d/a. {{$data->alamat}}</b></td>
             </tr>
-            
-        </table>
-    </div>
-
-    <div class="bot" style="line-height: 20px; margin-top: 50px">
-        <table>
-            <tr>
-                <td><b>PENGIRIM</b></td>
-            </tr>
-            <tr>
-                <td><b>Pesantren AL-Quran Nurul Falah</b></td>
-            </tr>
-            <tr>
-                <td><b>Jl. Ketintang Timur PTT VB Surabaya</b></td>
-            </tr>
-            <tr>
-                <td style="width: 60%"><b style="text-transform: uppercase">Telp. 031-8281278 / 8298887 Hp. 081333087809</b></td>
-                <td style="width: 40%"></td>
-            </tr>
-            
         </table>
     </div>
 </body>

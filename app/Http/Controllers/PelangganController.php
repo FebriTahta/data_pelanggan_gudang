@@ -38,7 +38,8 @@ class PelangganController extends Controller
                     return $actionBtn;
                 })
                 ->addColumn('cetak', function($data){
-                    $actionBtn = ' <a href="#" data-toggle="modal" data-target="#modalcetak" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-printer green-text s-18"></i></a>';
+                    $actionBtn  = ' <a href="#" data-toggle="modal" data-target="#modalcetak" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-printer green-text s-18"></i></a>';
+                    $actionBtn .= ' <a href="#" data-toggle="modal" data-target="#modalcetak2" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-mail-checked blue-text s-18"></i></a>';
                     return $actionBtn;
                 })
                 ->rawColumns(['action','cetak'])
@@ -123,6 +124,13 @@ class PelangganController extends Controller
     {
         $data = Pelanggan::findOrFail($request->id);
         $pdf  = PDF::loadview('cetak.cetak_pelanggan',compact('data'))->setPaper('A4','potrait');
+        return $pdf->stream();
+    }
+
+    public function be_print_amplop(Request $request)
+    {
+        $data = Pelanggan::findOrFail($request->id);
+        $pdf  = PDF::loadview('cetak.cetak_amplop',compact('data'))->setPaper('A4','landscape');
         return $pdf->stream();
     }
 
