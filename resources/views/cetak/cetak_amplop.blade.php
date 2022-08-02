@@ -30,7 +30,7 @@
         </table>
     </div>
 
-    <div class="kop" style="margin-left:50%">
+    <div class="kop" style="margin-left:40%">
         <table >
             <tr>
                 <td><b>KEPADA Yth</b></td>

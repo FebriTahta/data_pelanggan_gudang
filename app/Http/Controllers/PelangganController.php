@@ -130,7 +130,7 @@ class PelangganController extends Controller
     public function be_print_amplop(Request $request)
     {
         $data = Pelanggan::findOrFail($request->id);
-        $pdf  = PDF::loadview('cetak.cetak_amplop',compact('data'))->setPaper('A4','landscape');
+        $pdf  = PDF::loadview('cetak.cetak_amplop',compact('data'))->setPaper('A4','potrait');
         return $pdf->stream();
     }
 
