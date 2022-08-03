@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <div class="amplop" style="margin-left: 25%">
+    <div class="amplop" style="margin-left: 25%; margin-top: 200px">
         <div class="bot" style="font-size: 14px">
             <table >
                 <tr>
