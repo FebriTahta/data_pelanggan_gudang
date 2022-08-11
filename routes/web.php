@@ -30,3 +30,7 @@ Route::get('/admin-pelanggan-print-amplop',[PelangganController::class,'be_print
 Route::post('/admin-import-pelanggan',[ImportController::class,'import_pelanggan'])->name('import.pelanggan');
 Route::post('/admin-add-pelanggan',[PelangganController::class,'be_add_pelanggan'])->name('be.add.pelanggan');
 Route::post('/admin-remove-pelanggan',[PelangganController::class,'be_remove_pelanggan'])->name('be.remove.pelanggan');
+
+Route::get('/konfirmasi-cetak/{pelanggan_id}',[PelangganController::class,'be_konfirmasi_cetak']);
+Route::get('/admin-pelanggan-print-new/{pelanggan_id}',[PelangganController::class,'be_print_pelanggan_new'])->name('be.print.pelanggan.new');
+Route::get('/admin-pelanggan-print-amplop-new/{pelanggan_id}',[PelangganController::class,'be_print_amplop_new'])->name('be.print.amplop.new');

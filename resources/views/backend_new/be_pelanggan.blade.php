@@ -1,5 +1,9 @@
 @extends('new_layouts.be_master')
 
+@section('head')
+<title>Data Pelanggan</title>
+@endsection
+
 @section('content')
 <div class="page has-sidebar-left height-full">
     <header class="blue accent-3 relative nav-sticky">

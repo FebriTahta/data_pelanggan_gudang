@@ -47,6 +47,12 @@
                 </tr>
             </table>
         </div>
+
+        @if ($data->ekspedisi !== null)
+            <div class="ekspedisi">
+                <b>Ekspedisi : {{$data->ekspedisi}}</b>
+            </div>
+        @endif
     </div>
     
 </body>

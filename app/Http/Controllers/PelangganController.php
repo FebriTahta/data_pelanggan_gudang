@@ -38,8 +38,9 @@ class PelangganController extends Controller
                     return $actionBtn;
                 })
                 ->addColumn('cetak', function($data){
-                    $actionBtn  = ' <a href="#" data-toggle="modal" data-target="#modalcetak" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-printer green-text s-18"></i></a>';
-                    $actionBtn .= ' <a href="#" data-toggle="modal" data-target="#modalcetak2" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-mail-checked blue-text s-18"></i></a>';
+                    // $actionBtn  = ' <a href="#" data-toggle="modal" data-target="#modalcetak" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-printer green-text s-18"></i></a>';
+                    // $actionBtn .= ' <a href="#" data-toggle="modal" data-target="#modalcetak2" data-id="'.$data->id.'" data-namacabang="'.$data->namacabang.'"><i class="icon icon icon-mail-checked blue-text s-18"></i></a>';
+                    $actionBtn = '<a href="/konfirmasi-cetak/'.$data->id.'" target="_blank""><i class="icon icon icon-printer green-text" style="font-size:35px"></i></a>';
                     return $actionBtn;
                 })
                 ->rawColumns(['action','cetak'])
@@ -135,4 +136,25 @@ class PelangganController extends Controller
     }
 
 
+    public function be_print_pelanggan_new($pelanggan_id)
+    {
+        $data = Pelanggan::findOrFail($pelanggan_id);
+        $pdf  = PDF::loadview('cetak.cetak_pelanggan',compact('data'))->setPaper('A4','potrait');
+        return $pdf->stream();
+    }
+
+    public function be_print_amplop_new($pelanggan_id)
+    {
+        $data = Pelanggan::findOrFail($pelanggan_id);
+        $pdf  = PDF::loadview('cetak.cetak_amplop',compact('data'))->setPaper('A4','landscape');
+        return $pdf->stream();
+    }
+
+
+    public function be_konfirmasi_cetak($pelanggan_id)
+    {
+        $activity = Cetak::limit('10');
+        $pelanggan = Pelanggan::findOrFail($pelanggan_id);
+        return view('backend_new.be_pelanggan_confirm_cetak',compact('pelanggan','activity'));
+    }
 }
