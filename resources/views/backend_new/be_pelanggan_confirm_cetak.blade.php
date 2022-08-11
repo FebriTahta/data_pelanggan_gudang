@@ -65,7 +65,31 @@
                                         </table>
                                     </div>
                                 
-                                    {{-- <div class="kop" style="margin-top: 80px; font-size: 14px">
+                                   
+
+                                    <div class="kop" style="margin-top: 80px; margin-left:40%; font-size: 14px">
+                                        <table >
+                                            <tr>
+                                               
+                                                <td><b>KEPADA Yth</b></td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td><b>Ust/Ustd. {{$pelanggan->kepala}}</b></td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td><b>Telp. {{$pelanggan->telepon}}</b></td>
+                                            </tr>
+                                            <tr>
+                                               
+                                                  
+                                                <td style=""><b style="">d/a. {{$pelanggan->alamat}}</b></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                     <div class="kop" style="font-size: 14px">
                                         @if ($pelanggan->ekspedisi !== null)
                                             <table >
                                                 <tr>
@@ -76,35 +100,6 @@
                                                 </tr>
                                             </table>
                                         @endif
-                                    </div> --}}
-
-                                    <div class="kop" style="margin-top: 80px; font-size: 14px">
-                                        <table >
-                                            <tr>
-                                                <td style="width: 40%"></td>
-                                                <td><b>KEPADA Yth</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 40%"></td>
-                                                <td><b>Ust/Ustd. {{$pelanggan->kepala}}</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    @if (strlen($pelanggan->ekspedisi) > 2)
-                                                        <b>EKSPEDISI : </b>
-                                                    @endif
-                                                </td>   
-                                                <td><b>Telp. {{$pelanggan->telepon}}</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    @if (strlen($pelanggan->ekspedisi) > 2)
-                                                        <b>{{$pelanggan->ekspedisi}} </b>
-                                                    @endif
-                                                </td>
-                                                <td style=""><b style="">d/a. {{$pelanggan->alamat}}</b></td>
-                                            </tr>
-                                        </table>
                                     </div>
                                 </div>
                             </div>

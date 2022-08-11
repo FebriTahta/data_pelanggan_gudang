@@ -48,7 +48,7 @@
             </table>
         </div>
 
-        @if ($data->ekspedisi !== null)
+        @if (strlen($data->ekspedisi) > 2)
             <div class="ekspedisi">
                 <b>Ekspedisi : {{$data->ekspedisi}}</b>
             </div>
