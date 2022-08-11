@@ -90,7 +90,7 @@
                                     </div>
                                     
                                      <div class="kop" style="font-size: 14px">
-                                        @if ($pelanggan->ekspedisi !== null)
+                                        @if (strlen($pelanggan->ekspedisi) > 2)
                                             <table >
                                                 <tr>
                                                     <td><b>EKSPEDISI : </b></td>
