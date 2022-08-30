@@ -59,7 +59,7 @@ class PelangganController extends Controller
 
             return response()->json([
                 'status' => 400,
-                'message'  => 'Response Gagal',
+                'message'  => 'Nama Cabang & Alamat Wajib Diisi',
                 'errors' => $validator->messages(),
             ]);
 
