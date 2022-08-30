@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <div class="cetak" style="margin-left: 100px">
+    <div class="cetak" style="margin-left: 50px">
         <div class="kop" style="line-height: 23px;">
             <table style="font-size: 17px; font-weight: 700">
                 <tr>
@@ -25,8 +25,8 @@
                     <td><b>Telp. {{$data->telepon}}</b></td>
                 </tr>
                 <tr>
-                    <td style="width: 70%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
-                    <td style="width: 30%"></td>
+                    <td style="width: 65%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
+                    <td style="width: 35%"></td>
                 </tr>
             </table>
         </div>
