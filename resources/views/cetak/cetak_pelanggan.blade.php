@@ -29,8 +29,8 @@
                     <td style="width: 50%"><b style="text-transform: uppercase" style="width: 50%">{{substr($data->alamat,0,50)}}</b> <br> <b>{{substr($data->alamat,50)}}</b></td>
                     <td style="width: 50%"></td>
                     @else
-                    <td style="width: 68%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
-                    <td style="width: 38%"></td>
+                    <td style="width: 60%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
+                    <td style="width: 40%"></td>
                     @endif
                 </tr>
             </table>
