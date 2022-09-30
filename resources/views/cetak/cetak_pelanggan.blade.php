@@ -48,7 +48,7 @@
                     <td><b>Jl. Ketintang Timur PTT VB Surabaya</b></td>
                 </tr>
                 <tr>
-                    <td style="width: 70%"><b style="text-transform: uppercase">Telp. 031-8281278 / 8298887 Hp. 081333087809</b></td>
+                    <td style="width: 70%"><b style="text-transform: uppercase">Telp. 031-8281278 / 0856 0796 0078</b></td>
                     <td style="width: 30%"></td>
                 </tr> 
                 
