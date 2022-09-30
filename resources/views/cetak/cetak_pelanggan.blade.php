@@ -26,7 +26,7 @@
                 </tr>
                 <tr>
                     @if (strlen($data->alamat) < 60)
-                    <td style="width: 50%"><b style="text-transform: uppercase" style="width: 50%">{{substr($data->alamat,0,50)}}</b> <br> <b>{{substr($data->alamat,50)}}</b></td>
+                    <td style="width: 48%"><b style="text-transform: uppercase" style="width: 48%">{{substr($data->alamat,0,50)}}</b> <br> <b>{{substr($data->alamat,50)}}</b></td>
                     <td style="width: 50%"></td>
                     @else
                     <td style="width: 70%"><b style="text-transform: uppercase">{{$data->alamat}}</b></td>
