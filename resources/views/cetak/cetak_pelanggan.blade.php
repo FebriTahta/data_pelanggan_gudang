@@ -25,10 +25,10 @@
                     <td><b>Telp. {{$data->telepon}}</b></td>
                 </tr>
                 <tr>
-                    @if (strlen($data->alamat) < 60)
+                    @if (strlen($data->alamat) < 60 || strlen($data->alamat) == 60)
                     <td style="width: 50%"><b style="text-transform: uppercase" style="width: 50%">
-                        {{-- {{substr($data->alamat,0,50)}}</b> <br> <b>{{substr($data->alamat,50)}}</b> --}}
-                        {{$data->alamat}}
+                        {{substr($data->alamat,0,50)}}</b> <br> <b>{{substr($data->alamat,50)}}</b>
+                        {{-- {{$data->alamat}} --}}
                     </td>
                     <td style="width: 50%"></td>
                     @else
@@ -39,7 +39,13 @@
             </table>
         </div>
       
-        <div class="bot" style="line-height: 23px; margin-top: 50px">
+        <div class="bot"
+        @if (strlen($data->alamat) < 60 || strlen($data->alamat) == 60)
+        style="line-height: 23px; margin-top: 50px"
+        @else
+        style="line-height: 23px; margin-top: 40px"
+        @endif 
+        >
             <table style="font-size: 17px; font-weight: 700">
                 <tr>
                     <td><b>PENGIRIM</b></td>
