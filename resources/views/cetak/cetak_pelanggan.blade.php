@@ -32,8 +32,8 @@
                     </td>
                     <td style="width: 50%"></td>
                     @else
-                    <td style="width: 68%"><b style="text-transform: capitalize">{{$data->alamat}}</b></td>
-                    <td style="width: 38%"></td>
+                    <td style="width: 75%"><b style="text-transform: capitalize">{{$data->alamat}}</b></td>
+                    <td style="width: 25%"></td>
                     @endif
                 </tr>
             </table>
