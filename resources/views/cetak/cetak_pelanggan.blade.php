@@ -27,12 +27,12 @@
                 <tr>
                     @if (strlen($data->alamat) < 60 || strlen($data->alamat) == 60)
                     <td style="width: 50%"><b style="text-transform: capitalize" style="width: 50%">
-                        {{substr($data->alamat,0,50)}}</b> <br> <b>{{substr($data->alamat,50)}}</b>
+                        {{substr(ucfirst(strtolower($data->alamat)),0,50)}}</b> <br> <b>{{substr(ucfirst(strtolower($data->alamat)),50)}}</b>
                         {{-- {{$data->alamat}} --}}
                     </td>
                     <td style="width: 50%"></td>
                     @else
-                    <td style="width: 75%"><b style="text-transform: capitalize">{{$data->alamat}}</b></td>
+                    <td style="width: 75%"><b style="text-transform: capitalize">{{ucfirst(strtolower($data->alamat))}}</b></td>
                     <td style="width: 25%"></td>
                     @endif
                 </tr>
